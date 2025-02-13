@@ -1,10 +1,10 @@
 # house-rent-prediction-with-LR
  House Rent Prediction 🏡💰
-📌 Overview
+📌 **Overview**
 This project predicts house rent prices using Linear Regression. The model is trained on real estate data, considering a single feature area size.
-📂 Dataset
-Source: (Kaggle:https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset/data)
-Features:
+📂 **Dataset**
+**Source:** (Kaggle:https://www.kaggle.com/datasets/iamsouravbanerjee/house-rent-prediction-dataset/data)
+**Features:**
 BHK: Number of Bedrooms, Hall, Kitchen.
 
 Rent: Rent of the Houses/Apartments/Flats.
@@ -27,9 +27,7 @@ Bathroom: Number of Bathrooms.
 
 Point of Contact: Whom should you contact for more information regarding the Houses/Apartments/Flats.
 
-**** It has many features but I used Size as I'm focused to develop simple Linear Regression
-
-🛠️ Tech Stack
+🛠️ **Tech Stack**
 Python 🐍
 Pandas & NumPy (Data Processing)
 Matplotlib & Seaborn (Visualization)
@@ -40,13 +38,8 @@ How to Run the Project
 bash
 Copy
 Edit
-git clone https://github.com/gowthamisurapaneni/house-rent-prediction-with-LR.git
+git clone https://github.com/gowthamisurapaneni/house-rent-prediction.git
 cd house-rent-prediction
-2. Install Dependencies
-bash
-Copy
-Edit
-pip install -r requirements.txt
 3. Run the Jupyter Notebook
 bash
 Copy
@@ -54,12 +47,13 @@ Edit
 jupyter notebook
 Open LR_rent.ipynb and run all cells.
 
-📈 Results
-Model Used: Simple Linear Regression
-R² Score: 0.40
-Insights: The current model captures some rental price trends based on size but has scope for improvement. The models initial R2 score was 0.23. After apllying feature engineering on size based on area type, the score has gone up to 0.40
-📌 Future Improvements
-Consider more features in the dataset to improve score more.
+📈 **Results**
+**Models Used**: Simple Linear Regression , Multi-Linear Regression
+**Linear Regression R² Score**: 0.40
+**Multiple Linear Regression R² Score:** 0.58 ✅
+**Insights**: Simple linear regression model captures some rental price trends based on size but has scope for improvement. The models initial R2 score was 0.23. After apllying feature engineering on size based on area type, the score has gone up to 0.40.
+Multiple columns in dataset are strings. Map being used rather one hot encoding to not increase dimensionality. Few outliers were deleted to improve performance of the model.Locality is key feature which was not used to train model as it is string but neither ZIP nor llattitued/longitude .
+📌 **Future Improvements**
 Try advanced models like Random Forest or XGBoost.
 
 
