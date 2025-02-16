@@ -52,11 +52,13 @@ Open LR_rent.ipynb and run all cells.
 **Linear Regression R² Score**: 0.40
 **Multiple Linear Regression R² Score:** 0.65 ✅
 **Neural Networks R² Score:** 0.766 ✅
+**XGBoost R² Score:** 0.771 ✅
 **Insights**: Simple linear regression model captures some rental price trends based on size but has scope for improvement. The models initial R² score was 0.23. After apllying feature engineering on size based on area type, the score has gone up to 0.40.
 Multiple columns in dataset are strings. One hot encoding is used for categorical columns . Few outliers were deleted to improve performance of the model. All these improved model performance as R² score improved from 0.40 to 0.62. SGD regression also used to experiment , but it was so random. It gave 0.55 once and 0.60 next time(Test and train splits are randomly choosen).
 All the above preprocessing steps are used to train Neural Networks. Apart from input and output layers , one hidden layer with 8 neurons used. It iproved performance more as R² score increased to 0.76.
-Locality is key feature which was not used to train model as it is string but neither ZIP nor llattitued/longitude .
-📌 **Future Improvements**
-Try advanced models like Random Forest or XGBoost.
+XGBoost and NN performance almost match here as R² scores are pretty close. 
 
+📌 **Future Improvements**
+
+Locality is key feature which was not used to train model as it is string but neither ZIP nor llattitued/longitude .
 
